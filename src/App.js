@@ -12,6 +12,8 @@ import Oursolutions2 from './main components/Oursolutions2';
 function App() {
   return (
     <Router>
+
+
       <Header />
       <Routes>
         {data.map((c) => {

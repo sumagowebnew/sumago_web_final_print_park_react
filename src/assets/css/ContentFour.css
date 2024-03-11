@@ -1,0 +1,39 @@
+.content-four .acc-content {
+    font-family: 'Outfit', sans-serif;
+}
+
+.content-four .accord-item {
+    padding: 12px 0;
+    margin-bottom: 20px;
+}
+
+.content-four .accordion-item {
+    border: 2px dotted #dee2e6;
+    border-radius: 20px;
+}
+
+.content-four .accordion-button:focus {
+    z-index: 3;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none;
+}
+
+.content-four .accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+}
+
+.content-four .accordion-button::after {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    margin-left: auto;
+    content: "";
+    background-image: none !important;
+    display: inline-block;
+}
+
+.content-four .accordion-button::after {
+    content: '+';
+    font-size: 32px;
+}

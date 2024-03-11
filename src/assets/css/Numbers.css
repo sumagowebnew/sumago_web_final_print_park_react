@@ -1,0 +1,48 @@
+.numbers-section {
+    background-color: #F34F58 !important;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 100px 0px 20px 0px;
+    margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+    .numbers-section .customNumberTileStyling {
+        margin-top: 124px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* .elementor-column {
+        width: 100% !important;
+    }
+
+    .funfact-block-one {
+        margin-bottom: 30px;
+    }
+
+    .count-box {
+        text-align: center;
+    }
+
+    .count-text {
+        font-size: 36px;
+    }
+
+    .te-text {
+        text-align: center;
+    }
+
+    .te-icon {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .theme-btn {
+        margin-top: 20px;
+    } */
+
+    .cta-section {
+        width: 100%;
+    }
+}

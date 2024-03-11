@@ -1,0 +1,26 @@
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carousel-indicators .active {
+  background-color: red;
+}
+
+.customCarouselStyling {
+  padding: 0 60px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .carouselHeightForMobile {
+    height: 600px;
+  }
+
+  .customCarouselStyling {
+    padding: 0;
+  }
+}

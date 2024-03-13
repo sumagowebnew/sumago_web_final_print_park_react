@@ -21,6 +21,7 @@ const TechnologiesServiced = () => {
         slidesToShow: 3,
         speed: 500,
         pauseOnHover: false,
+        arrows: false,
     };
     return (
         <div className='technologies-section'>

@@ -677,7 +677,7 @@
   
   .sortable-masonry .filters-box{
     position: relative;
-    margin-bottom: 51px;
+    margin-bottom: 0;
   }
   
   .project-section .sortable-masonry .filters-box:before{

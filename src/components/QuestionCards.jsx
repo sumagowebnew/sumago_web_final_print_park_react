@@ -7,7 +7,7 @@ import '../assets/css/QuestionCards.css'
 
 const QuestionCards = () => {
     return (
-        <div className='questionCards'>
+        <div className='questionCards container-fluid'>
             <section id="quebak"
                 class="elementor-section elementor-inner-section elementor-element elementor-element-cb662a5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                 data-id="cb662a5" data-element_type="section">
@@ -40,7 +40,7 @@ const QuestionCards = () => {
 
                                                         </div>
                                                         <div class="lower-content">
-                                                            <h3 class="te-title">
+                                                            <h3 class="te-title" style={{lineHeight:'28px'}}>
                                                                 <a
                                                                 >
                                                                     Do you face frequent website bugs on your

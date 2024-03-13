@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Frame from '../assets/images/wp-content/themes/printpark/assets/images/shape/Frame.png';
 import shape20 from '../assets/images/wp-content/themes/printpark/assets/images/shape/shape-20.png';
+import { Col, Container, Row } from 'react-bootstrap';
+import '../assets/css/Contact1.css'
 
 const Contact1 = () => {
     return (
@@ -218,111 +220,116 @@ const Contact1 = () => {
                         </div>
                     </div>
                 </section>
-                <section
-                    className="elementor-section elementor-top-section elementor-element elementor-element-1fdab63 elementor-section-boxed elementor-section-height-default elementor-section-height-default mb-3"
-                    data-id="1fdab63" data-element_type="section">
-                    <div className="elementor-container elementor-column-gap-default">
-                        <div className="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a4fd0a5"
-                            data-id="a4fd0a5" data-element_type="column">
-                            <div className="elementor-widget-wrap elementor-element-populated">
-                                <div className="elementor-element elementor-element-ca701f4 elementor-widget elementor-widget-printpark_icon_box"
-                                    data-id="ca701f4" data-element_type="widget"
-                                    data-widget_type="printpark_icon_box.default">
-                                    <div className="elementor-widget-container">
-                                        <section className="info-section centred p-0 m-0">
-                                            <div className="info-column">
-                                                <div className="info-block-one">
-                                                    <div className="inner-box te-icon-box">
-                                                        <div className="icon-box te-icon">
-                                                            <i className="flaticon-map"></i>
+                <Container fluid>
+                    <section
+                        className="elementor-section elementor-top-section elementor-element elementor-element-1fdab63 elementor-section-boxed elementor-section-height-default elementor-section-height-default mb-3"
+                        data-id="1fdab63" data-element_type="section">
+                        <div className="elementor-container elementor-column-gap-default">
+                            <Row className='tabAdjustment'>
+                                <Col lg={4} md={6} sm={12} className='column1'>
+                                    <div className="elementor-column elementor-top-column elementor-element elementor-element-a4fd0a5 "
+                                        data-id="a4fd0a5" data-element_type="column">
+                                        <div className="elementor-widget-wrap elementor-element-populated">
+                                            <div className="elementor-element elementor-element-ca701f4 elementor-widget elementor-widget-printpark_icon_box"
+                                                data-id="ca701f4" data-element_type="widget"
+                                                data-widget_type="printpark_icon_box.default">
+                                                <div className="elementor-widget-container">
+                                                    <section className="info-section centred p-0 m-0">
+                                                        <div className="info-column">
+                                                            <div className="info-block-one">
+                                                                <div className="inner-box te-icon-box cardHeight">
+                                                                    <div className="icon-box te-icon">
+                                                                        <i className="flaticon-map"></i>
+                                                                    </div>
+                                                                    <p className="te-text">Visit our office <br />9 am to 6 pm Monday to Saturday.
+                                                                    </p>
+                                                                    <h4 className="te-subtitle">Third Floor, Gajra Chambers, Mumbai - Agra National Hwy, Kamod Nagar, Indira Nagar, Nashik, Maharashtra 422009.
+                                                                    </h4>
+                                                                    <h6 className="text-lowercase"><a href="mailto:info@sumagoinfotech.com" >info@sumagoinfotech.com</a></h6>
+                                                                    <h6><a href="tel:+918530388815">+91 8530388815</a></h6>
+                                                                    <h6><a href="https://maps.app.goo.gl/FnzfAoExzBH4AwE39"
+                                                                        target="&quot;_blank&quot;" rel="&quot;nofollow&quot;"><i
+                                                                            className="flaticon-arrow-right"></i>View On Map</a></h6>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <p className="te-text">Visit our office <br />9 am to 6 pm Monday to Saturday.
-                                                        </p>
-                                                        <h4 className="te-subtitle">Third Floor, Gajra Chambers, Mumbai - Agra National Hwy, Kamod Nagar, Indira Nagar, Nashik, Maharashtra 422009.
-                                                        </h4>
-                                                        <h6 className="text-lowercase"><a href="mailto:info@sumagoinfotech.com" >info@sumagoinfotech.com</a></h6>
-                                                        <h6><a href="tel:+918530388815">+91 8530388815</a></h6>
-                                                        <h6><a href="https://maps.app.goo.gl/FnzfAoExzBH4AwE39"
-                                                            target="&quot;_blank&quot;" rel="&quot;nofollow&quot;"><i
-                                                                className="flaticon-arrow-right"></i>View On Map</a></h6>
-                                                    </div>
+                                                    </section>
                                                 </div>
                                             </div>
-                                        </section>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="justify-content-center elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a4fd0a5"
-                            data-id="a4fd0a5" data-element_type="column">
-                            <div className="elementor-widget-wrap elementor-element-populated">
-                                <div className="elementor-element elementor-element-ca701f4 elementor-widget elementor-widget-printpark_icon_box"
-                                    data-id="ca701f4" data-element_type="widget"
-                                    data-widget_type="printpark_icon_box.default">
-                                    <div className="elementor-widget-container">
-                                        <section className="info-section centred p-0 m-0">
-                                            <div className="info-column">
-                                                <div className="info-block-one">
-                                                    <div className="inner-box te-icon-box">
-                                                        <div className="icon-box te-icon">
-                                                            <i className="flaticon-map"></i>
+                                </Col>
+                                <Col lg={4} md={6} sm={12} className='column2'>
+                                    <div className="justify-content-center elementor-column elementor-top-column elementor-element elementor-element-a4fd0a5"
+                                        data-id="a4fd0a5" data-element_type="column">
+                                        <div className="elementor-widget-wrap elementor-element-populated">
+                                            <div className="elementor-element elementor-element-ca701f4 elementor-widget elementor-widget-printpark_icon_box"
+                                                data-id="ca701f4" data-element_type="widget"
+                                                data-widget_type="printpark_icon_box.default">
+                                                <div className="elementor-widget-container">
+                                                    <section className="info-section centred p-0 m-0">
+                                                        <div className="info-column">
+                                                            <div className="info-block-one">
+                                                                <div className="inner-box te-icon-box cardHeight">
+                                                                    <div className="icon-box te-icon">
+                                                                        <i className="flaticon-map"></i>
+                                                                    </div>
+                                                                    <p className="te-text">Visit our office <br />9 am to 6 pm Monday to Saturday.
+                                                                    </p>
+                                                                    <h4 className="te-subtitle">The Avenue, Fourth Floor, Behind Prakash Petrol Pump, Govind Nagar, Nashik, Maharashtra 422009.
+                                                                    </h4>
+                                                                    <h6 className="text-lowercase"><a href="mailto:info@sumagoinfotech.com">info@sumagoinfotech.com</a></h6>
+                                                                    <h6><a href="tel:+918408084888">+91 8408084888</a></h6>
+                                                                    <h6><a href="https://maps.app.goo.gl/KEyFqLC59pYGqcwy9"
+                                                                        target="&quot;_blank&quot;" rel="&quot;nofollow&quot;"><i
+                                                                            className="flaticon-arrow-right"></i>View On Map</a></h6>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <p className="te-text">Visit our office <br />9 am to 6 pm Monday to Saturday.
-                                                        </p>
-                                                        <h4 className="te-subtitle">The Avenue, Fourth Floor, Behind Prakash Petrol Pump, Govind Nagar, Nashik, Maharashtra 422009.
-                                                        </h4>
-                                                        <h6 className="text-lowercase"><a href="mailto:info@sumagoinfotech.com">info@sumagoinfotech.com</a></h6>
-                                                        <h6><a href="tel:+918408084888">+91 8408084888</a></h6>
-                                                        <h6><a href="https://maps.app.goo.gl/KEyFqLC59pYGqcwy9"
-                                                            target="&quot;_blank&quot;" rel="&quot;nofollow&quot;"><i
-                                                                className="flaticon-arrow-right"></i>View On Map</a></h6>
-                                                    </div>
+                                                    </section>
                                                 </div>
                                             </div>
-                                        </section>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a4fd0a5"
-                            data-id="a4fd0a5" data-element_type="column">
-                            <div className="elementor-widget-wrap elementor-element-populated">
-                                <div className="elementor-element elementor-element-ca701f4 elementor-widget elementor-widget-printpark_icon_box"
-                                    data-id="ca701f4" data-element_type="widget"
-                                    data-widget_type="printpark_icon_box.default">
-                                    <div className="elementor-widget-container">
-                                        <section className="info-section centred p-0 m-0">
-                                            <div className="info-column">
-                                                <div className="info-block-one">
-                                                    <div className="inner-box te-icon-box">
-                                                        <div className="icon-box te-icon">
-                                                            <i className="flaticon-map"></i>
+                                </Col>
+                                <Col lg={4} md={6} sm={12} className='column3'>
+                                    <div className="elementor-column elementor-top-column elementor-element elementor-element-a4fd0a5"
+                                        data-id="a4fd0a5" data-element_type="column">
+                                        <div className="elementor-widget-wrap elementor-element-populated">
+                                            <div className="elementor-element elementor-element-ca701f4 elementor-widget elementor-widget-printpark_icon_box"
+                                                data-id="ca701f4" data-element_type="widget"
+                                                data-widget_type="printpark_icon_box.default">
+                                                <div className="elementor-widget-container">
+                                                    <section className="info-section centred p-0 m-0">
+                                                        <div className="info-column">
+                                                            <div className="info-block-one">
+                                                                <div className="inner-box te-icon-box cardHeight">
+                                                                    <div className="icon-box te-icon">
+                                                                        <i className="flaticon-map"></i>
+                                                                    </div>
+                                                                    <p className="te-text">Visit our office <br />9 am to 6 pm Monday to Saturday.
+                                                                    </p>
+                                                                    <h4 className="te-subtitle">Third Floor, Kakade Center Port, University Rd, near E-Square, Premnagar, Shivajinagar, Pune, Maharashtra 411016.
+                                                                    </h4>
+                                                                    <h6 className="text-lowercase"><a href="mailto:info@sumagoinfotech.com" >info@sumagoinfotech.com</a></h6>
+                                                                    <h6><a href="tel:+917263084881" >+91 7263084881</a></h6>
+                                                                    <h6><a href="https://maps.app.goo.gl/SshnZN7UXz888vk59"
+                                                                        target="&quot;_blank&quot;" rel="&quot;nofollow&quot;"><i
+                                                                            className="flaticon-arrow-right"></i>View On Map</a></h6>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <p className="te-text">Visit our office <br />9 am to 6 pm Monday to Saturday.
-                                                        </p>
-                                                        <h4 className="te-subtitle">Third Floor, Kakade Center Port, University Rd, near E-Square, Premnagar, Shivajinagar, Pune, Maharashtra 411016.
-                                                        </h4>
-                                                        <h6 className="text-lowercase"><a href="mailto:info@sumagoinfotech.com" >info@sumagoinfotech.com</a></h6>
-                                                        <h6><a href="tel:+917263084881" >+91 7263084881</a></h6>
-                                                        <h6><a href="https://maps.app.goo.gl/SshnZN7UXz888vk59"
-                                                            target="&quot;_blank&quot;" rel="&quot;nofollow&quot;"><i
-                                                                className="flaticon-arrow-right"></i>View On Map</a></h6>
-                                                    </div>
+                                                    </section>
                                                 </div>
                                             </div>
-                                        </section>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                </Col>
+                            </Row>
                         </div>
-                    </div>
-                </section >
-
-
+                    </section >
+                </Container>
             </div >
-
-
-
             <div className="clearfix"></div>
         </>
     )

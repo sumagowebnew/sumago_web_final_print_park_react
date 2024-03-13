@@ -35,11 +35,11 @@ const Testimonials = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 500,
-        // arrows: false,
+        arrows: false,
         beforeChange: (current, next) => setCurrentSlide(next),
     };
     return (
-        <div className="testimonial-section">
+        <div className="testimonial-section container-fluid">
             <Container>
                 <Row>
                     <Col lg={5} md={5} sm={12}>

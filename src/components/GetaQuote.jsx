@@ -5,13 +5,13 @@ import { Col, Row } from 'react-bootstrap';
 const GetaQuote = () => {
     return (
         <>
-            <div className='getaquote-section'>
+            <div className='getaquote-section container-fluid'>
                 <section
                     className="elementor-section elementor-top-section elementor-element elementor-element-1fdab63 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="1fdab63" data-element_type="section">
                     <div className="elementor-container elementor-column-gap-default d-flex align-content-center ">
-                        <Row>
-                            <Col lg={4} md={6} sm={12}>
+                        <Row className='container-fluid'>
+                            <Col lg={4} md={6} sm={12} className='column-1'>
                                 <div className="elementor-column elementor-top-column elementor-element elementor-element-fec6395  "
                                     data-id="fec6395" data-element_type="column">
                                     <div className="elementor-widget-wrap elementor-element-populated d-flex  align-content-center">
@@ -41,7 +41,7 @@ const GetaQuote = () => {
                                     </div>
                                 </div>
                             </Col>
-                            <Col lg={4} md={6} sm={12}>
+                            <Col lg={4} md={6} sm={12} className='column-2'>
                                 <div className="elementor-column elementor-top-column elementor-element elementor-element-a4fd0a5  "
                                     data-id="a4fd0a5" data-element_type="column">
                                     <div className="elementor-widget-wrap elementor-element-populated d-flex  align-content-center">
@@ -137,7 +137,7 @@ const GetaQuote = () => {
                                     </div>
                                 </div>
                             </Col>
-                            <Col lg={4} md={6} sm={12}>
+                            <Col lg={4} md={6} sm={12} className='column-3'>
                                 <div className="elementor-column elementor-top-column elementor-element elementor-element-c350336 "
                                     data-id="c350336" data-element_type="column">
                                     <div className="elementor-widget-wrap elementor-element-populated  d-flex  align-content-center">

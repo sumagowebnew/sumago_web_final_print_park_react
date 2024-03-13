@@ -16,7 +16,7 @@ const WhoWeAre2 = () => {
         });
     };
     return (
-        <div className="whoweare2-section">
+        <div className="whoweare2-section container-fluid">
             <Container>
                 <Row>
                     <Col lg={6} className="elementor-top-column">
@@ -80,11 +80,7 @@ const WhoWeAre2 = () => {
                             <div className="elementor-element elementor-element-fdcf695 elementor-widget elementor-widget-printpark_float_image" data-id="fdcf695" data-element_type="widget" data-widget_type="printpark_float_image.default">
                                 <div className="elementor-widget-container">
                                     <section className="about-section p-0 m-0">
-                                        <div className="image-column">
-                                            <div className="image-box">
-                                                <figure className="image image-4"><img src={rightimg} alt="Awesome Image" /></figure>
-                                            </div>
-                                        </div>
+                                        <figure className="image image-4"><img src={rightimg} alt="Awesome" /></figure>
                                     </section>
                                 </div>
                             </div>

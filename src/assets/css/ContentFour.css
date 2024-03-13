@@ -7,6 +7,12 @@
     margin-bottom: 20px;
 }
 
+.content-four .custom-accordion .accord-item .acc-btn h5 {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
 .content-four .accordion-item {
     border: 2px dotted #dee2e6;
     border-radius: 20px;
@@ -24,16 +30,22 @@
 }
 
 .content-four .accordion-button::after {
+    display: none;
+}
+
+.content-four .accordion-button::before {
     flex-shrink: 0;
     width: 32px;
     height: 32px;
-    margin-left: auto;
+    margin-right: 16px;
     content: "";
     background-image: none !important;
     display: inline-block;
 }
 
-.content-four .accordion-button::after {
+.content-four .accordion-button::before {
     content: '+';
     font-size: 32px;
+    display: flex;
+    align-items: center;
 }

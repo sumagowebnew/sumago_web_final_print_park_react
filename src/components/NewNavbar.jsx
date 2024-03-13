@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import '../Assets/CSS/Navbar.css'; // Import the CSS file for styling
+import '../assets/css/NewNavbar.css';
+import { Link } from 'react-router-dom';
 
 const NewNavbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -8,8 +9,15 @@ const NewNavbar = () => {
     setIsNavOpen(!isNavOpen);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
-    <div className="navbar">
+    <div className="navbar d-block d-lg-none">
       <div className="nav-content">
         <div className={`hamburger-menu ${isNavOpen ? 'open' : ''}`} onClick={toggleNavbar}>
           <div className="bar"></div>
@@ -18,14 +26,15 @@ const NewNavbar = () => {
         </div>
         <div className={`nav-links ${isNavOpen ? 'show' : ''}`}>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><Link to="/" onClick={()=>{toggleNavbar(); scrollToTop();}}>Home</Link></li>
+            <li><Link to={`/solutions/${encodeURIComponent("Web Development")}`} onClick={()=>{toggleNavbar(); scrollToTop();}}>Our Solutions</Link></li>
+            <li><Link to="/about" onClick={()=>{toggleNavbar(); scrollToTop();}}>About</Link></li>
+            <li><Link to="/career" onClick={()=>{toggleNavbar(); scrollToTop();}}>Career</Link></li>
+            <li><Link to="/contact" onClick={()=>{toggleNavbar(); scrollToTop();}}>Contact Us</Link></li>
           </ul>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

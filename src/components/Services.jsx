@@ -27,6 +27,30 @@ const Services = () => {
         {
             title: 'Finance and Banking',
             img: img3,
+        },
+        {
+            title: 'E-commerce',
+            img: img4,
+        },
+        {
+            title: 'Manufactoring',
+            img: img5,
+        },
+        {
+            title: 'Education',
+            img: img6,
+        },
+        {
+            title: 'Government',
+            img: img7,
+        },
+        {
+            title: 'Retail',
+            img: img8,
+        },
+        {
+            title: 'Logistics',
+            img: img9,
         }
     ]
     const cardsCol2 = [
@@ -58,7 +82,7 @@ const Services = () => {
         }
     ]
     return (
-        <div className='services-section'>
+        <div className='services-section container-fluid'>
             <Container>
                 <div className="services-text">
                     <div class="sec-title">
@@ -66,10 +90,10 @@ const Services = () => {
                         <h2 class="te-title printpark-size-default">Sectors that we offer Services for...</h2>
                     </div>
                 </div>
-                <Row style={{ marginTop: '60px' }}>
+                <Row >
                     {
                         cardsCol1.map((a) => (
-                            <Col lg={4} md={6} sm={12}>
+                            <Col lg={4} md={6} sm={12} className='serviceCards'>
                                 <div
                                     class="service-block te-service-block">
                                     <div class="service-block-one wow fadeInUp animated"
@@ -101,7 +125,7 @@ const Services = () => {
                         ))
                     }
                 </Row>
-                <Row style={{ marginTop: '20px' }}>
+                {/* <Row style={{ marginTop: '20px' }}>
                     {
                         cardsCol2.map((a) => (
                             <Col lg={4} md={6} sm={12}>
@@ -170,7 +194,7 @@ const Services = () => {
                             </Col>
                         ))
                     }
-                </Row>
+                </Row> */}
             </Container>
         </div>
     )

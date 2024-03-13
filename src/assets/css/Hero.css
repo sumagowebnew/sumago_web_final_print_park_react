@@ -35,25 +35,57 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 @media (max-width: 768px) {
-  .carousel-text {
-      left: 30%;
-      width: 50%;
-  }
+    .carousel-text {
+        left: 30%;
+        width: 50%;
+    }
 
-  .carousel-slide .carousel-text h1 {
-      font-size: 24px;
-  }
+    .carousel-slide .carousel-text h1 {
+        font-size: 24px;
+    }
 
-  .carousel-slide .carousel-text p {
-      font-size: 16px;
-  }
+    .carousel-slide .carousel-text p {
+        font-size: 16px;
+    }
 
-  .carousel-image {
-      left: 0;
-      width: 100%;
-  }
+    .carousel-image {
+        left: 0;
+        width: 100%;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1399px) {
+    .carousel-text {
+        width: 40%;
+        left: 28%;
+    }
+
+    .carousel-slide .carousel-text h1 {
+        font-family: 'Outfit', sans-serif;
+        font-size: 74px;
+        color: #f54c4c;
+    }
+
+    .carousel-slide .carousel-text p {
+        font-family: 'Outfit', sans-serif;
+        font-size: 28px;
+        color: #0c0c0c;
+        font-weight: 700;
+    }
+
+    .carousel-image {
+        margin-left: -30px;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
 }

@@ -56,7 +56,7 @@ const Header = () => {
 
     return (
         <>
-            <header className={`main-header header-style-one ${scrolled ? 'scrolled' : ''}`}>
+            <header className={`d-none d-lg-block main-header header-style-one ${scrolled ? 'scrolled' : ''}`}>
 
                 <div class="xs-sidebar-group info-group info-sidebar">
                     <div class="xs-overlay xs-bg-black"></div>

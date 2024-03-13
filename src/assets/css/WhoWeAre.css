@@ -1,5 +1,5 @@
 .whoweare-section {
-    margin: 60px 0;
+    margin: 10px 0;
 }
 
 .whoweare-section .image-container .image {
@@ -12,6 +12,17 @@
     line-height: 26px;
     font-weight: 800;
     margin-bottom: 14px;
+}
+
+.whoweare-section .imageContainer img {
+    margin-top: 100px;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width:768px){
+    .whoweare-section .imageContainer img {
+        margin-top: 20px;
+    }
 }
 
 .whoweare-text .text {

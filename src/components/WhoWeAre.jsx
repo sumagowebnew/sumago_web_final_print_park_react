@@ -19,7 +19,7 @@ const WhoWeAre = () => {
         });
     };
     return (
-        <div className='whoweare-section'>
+        <div className='whoweare-section container-fluid'>
             <section
                 class="elementor-section elementor-top-section elementor-element elementor-element-49f4cfd elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                 data-id="49f4cfd" data-element_type="section">
@@ -31,9 +31,9 @@ const WhoWeAre = () => {
                                 data-id="fdcf695" data-element_type="widget" data-widget_type="printpark_float_image.default">
                                 <div class="elementor-widget-container">
                                     <Row>
-                                        <Col lg={6} md={6} sm={12}>
+                                        <Col lg={6} md={6} sm={12} className='imageContainer'>
                                             <img src={img}
-                                                alt="Awesome" />
+                                                alt="Awesome"/>
                                         </Col>
                                         <Col lg={6} md={6} sm={12}>
                                             <div class="elementor-column elementor-top-column elementor-element elementor-element-7f816f0"

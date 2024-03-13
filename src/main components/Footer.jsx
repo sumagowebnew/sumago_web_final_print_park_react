@@ -5,6 +5,7 @@ import IntersectImage from '../assets/images/wp-content/uploads/2023/08/Intersec
 import Rectangle from '../assets/images/wp-content/themes/printpark/assets/images/shape/Rectangle.png'
 import footercard from '../assets/images/wp-content/themes/printpark/assets/images/shape/cricle.png'
 import { Link } from 'react-router-dom';
+import '../assets/css/Footer.css'
 const Footer = () => {
     const services = [
         { title: 'Web Development' },
@@ -27,11 +28,11 @@ const Footer = () => {
         });
     };
     return (
-        <footer className="main-footer">
+        <footer className="main-footer container-fluid">
             <Container fluid>
                 <div className="widget-section me-5 ms-5">
                     <Row className="clearfix">
-                        <Col lg={2} md={12} sm={12} className="footer-column">
+                        <Col lg={2} md={12} sm={12} className="footer-column column1">
                             <div id="nav_menu-1" className="footer-widget single-footer-widget widget_nav_menu">
                                 <div className="widget-title">
                                     <h3>Company</h3>
@@ -60,12 +61,12 @@ const Footer = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={5} md={12} sm={12} className="footer-column">
+                        <Col lg={5} md={12} sm={12} className="footer-column column2">
                             <div id="nav_menu-2" className="footer-widget single-footer-widget widget_nav_menu">
                                 <div className="widget-title">
                                     <h3>Services</h3>
                                 </div>
-                                <div className="menu-essentials-menu-container d-lg-flex">
+                                <div className="menu-essentials-menu-container d-lg-flex d-md-flex">
                                     <ul id="menu-essentials-menu" className="menu p-2">
                                         <li id="menu-item-1271"
                                             className="menu-item menu-item-type-post_type menu-item-object-service menu-item-1271">
@@ -118,7 +119,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={4} md={12} sm={12} className="footer-column">
+                        <Col lg={4} md={12} sm={12} className="footer-column column3">
                             <div id="printpark_promotion-1" className="footer-widget single-footer-widget widget_printpark_promotion">
                                 <div className="promotion-widget">
                                     <div className="inner-box" style={{ backgroundImage: `url(${Rectangle})` }}>
@@ -128,7 +129,7 @@ const Footer = () => {
                                             <img style={{ height: '50px', width: '50px' }} src={footercard} alt="Footer Card" />
                                         </div>
                                         <h2>Everything<br />to Market Your Business.</h2>
-                                        <Link onClick={scrollToTop} to={`/solutions/${encodeURIComponent("Digital Marketing")}`} className="theme-btn" style={{textDecoration:'none'}}>Start Today</Link>
+                                        <Link onClick={scrollToTop} to={`/solutions/${encodeURIComponent("Digital Marketing")}`} className="theme-btn" style={{ textDecoration: 'none' }}>Start Today</Link>
                                     </div>
                                 </div>
                             </div>
@@ -152,20 +153,23 @@ const Footer = () => {
                                 <h5>Follow On</h5>
                             </li>
                             <li>
-                                <Link target="_blank" to="https://www.facebook.com/sumagoinfotech/"><i className="fab fa-facebook"></i></Link>
+                                <Row>
+                                    <Col>
+                                        <Link target="_blank" to="https://www.facebook.com/sumagoinfotech/"><i className="fab fa-facebook"></i></Link>
+                                    </Col>
+                                    <Col>
+                                        <Link target="_blank" to="https://in.linkedin.com/company/sumago-infotech-pvt-ltd"><i className="fab fa-linkedin"></i></Link>
+                                    </Col>
+                                    <Col>
+                                        <Link target="_blank" to="https://www.instagram.com/sumago_infotech"><i className="fab fa-instagram"></i></Link>
+                                    </Col>
+                                    <Col>
+                                        <Link target="_blank" to="https://www.youtube.com/channel/UCoUCNHO1wXI92HnEmNtIkEg?view_as=subscriber"><i className="fab fa-youtube"></i></Link>
+                                    </Col>
+                                </Row>
                             </li>
                             <li>
-                                <Link target="_blank" to="https://in.linkedin.com/company/sumago-infotech-pvt-ltd"><i className="fab fa-linkedin"></i></Link>
-                            </li>
-                            <li>
-                                <Link target="_blank" to="https://www.instagram.com/sumago_infotech"><i className="fab fa-instagram"></i></Link>
-                            </li>
-                            <li>
-                                <Link target="_blank" to="https://www.youtube.com/channel/UCoUCNHO1wXI92HnEmNtIkEg?view_as=subscriber"><i className="fab fa-youtube"></i></Link>
-                            </li>
-                            <li>
-                                {/* Scroll to top */}
-                                <button className="scroll-top" onClick={scrollToTop}>
+                                <button className='scroll-top' onClick={scrollToTop}>
                                     <i className="flaticon-arrow-up"></i>
                                 </button>
                             </li>

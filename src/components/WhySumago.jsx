@@ -9,7 +9,7 @@ import shape6 from '../assets/images/wp-content/themes/printpark/assets/images/s
 
 const WhySumago = () => {
     return (
-        <div className='whysumago-section'>
+        <div className='whysumago-section container-fluid'>
             <section
                 class="elementor-section elementor-top-section elementor-element elementor-element-79a7c18 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                 data-id="79a7c18" data-element_type="section"
@@ -66,7 +66,7 @@ const WhySumago = () => {
                                                                 <div class="categories-block-one wow fadeInUp animated"
                                                                     data-wow-delay="00ms" data-wow-duration="1500ms">
                                                                     <div class="inner-box te-service-block">
-                                                                        <div class="shape" style={{backgroundImage: `url(${shape5})`}}>
+                                                                        <div class="shape" style={{ backgroundImage: `url(${shape5})` }}>
                                                                         </div>
                                                                         <div className="overlay-shape" style={{ backgroundImage: `url(${shape6})` }}>
                                                                         </div>
@@ -80,7 +80,7 @@ const WhySumago = () => {
                                                                         <figure class="image-box"><img width="220" height="220"
                                                                             src={img1}
                                                                             class="attachment-printpark_220x220 size-printpark_220x220 wp-post-image"
-                                                                            alt=""/></figure>
+                                                                            alt="" /></figure>
                                                                         {/* <div class="link-box">
                                                                             <a class="te-btn"
                                                                                 href="./service/banners/index.php">
@@ -95,15 +95,15 @@ const WhySumago = () => {
                                                                     data-wow-delay="00ms" data-wow-duration="1500ms">
                                                                     <div class="inner-box te-service-block">
                                                                         <div class="shape"
-                                                                            style={{backgroundImage: `url(${shape5})`}}>
+                                                                            style={{ backgroundImage: `url(${shape5})` }}>
                                                                         </div>
                                                                         <div class="overlay-shape"
-                                                                            style={{backgroundImage: `url(${shape6})`}}>
+                                                                            style={{ backgroundImage: `url(${shape6})` }}>
                                                                         </div>
                                                                         <h3><a class="ser-title"
                                                                         >Dedicated
-                                                                            <br/>
-                                                                                Team</a>
+                                                                            <br />
+                                                                            Team</a>
                                                                         </h3>
                                                                         <p class="ser-text">A team of passionate and skilled
                                                                             professionals committed to providing top-notch IT
@@ -111,7 +111,7 @@ const WhySumago = () => {
                                                                         <figure class="image-box"><img width="220" height="220"
                                                                             src={img2}
                                                                             class="attachment-printpark_220x220 size-printpark_220x220 wp-post-image"
-                                                                            alt=""/></figure>
+                                                                            alt="" /></figure>
                                                                         {/* <div class="link-box">
                                                                             <a class="te-btn"
                                                                                 href="./service/booklets/index.php">
@@ -126,10 +126,10 @@ const WhySumago = () => {
                                                                     data-wow-delay="00ms" data-wow-duration="1500ms">
                                                                     <div class="inner-box te-service-block">
                                                                         <div class="shape"
-                                                                            style={{backgroundImage: `url(${shape5})`}}>
+                                                                            style={{ backgroundImage: `url(${shape5})` }}>
                                                                         </div>
                                                                         <div class="overlay-shape"
-                                                                            style={{backgroundImage: `url(${shape6})`}}>
+                                                                            style={{ backgroundImage: `url(${shape6})` }}>
                                                                         </div>
                                                                         <h3><a class="ser-title"
                                                                         >Client-Centric
@@ -140,7 +140,7 @@ const WhySumago = () => {
                                                                         <figure class="image-box"><img width="220" height="220"
                                                                             src={img3}
                                                                             class="attachment-printpark_220x220 size-printpark_220x220 wp-post-image"
-                                                                            alt=""/></figure>
+                                                                            alt="" /></figure>
                                                                         {/* <div class="link-box">
                                                                             <a class="te-btn"
                                                                                 href="./service/business-cards/index.php">
@@ -155,10 +155,10 @@ const WhySumago = () => {
                                                                     data-wow-delay="00ms" data-wow-duration="1500ms">
                                                                     <div class="inner-box te-service-block">
                                                                         <div class="shape"
-                                                                            style={{backgroundImage: `url(${shape5})`}}>
+                                                                            style={{ backgroundImage: `url(${shape5})` }}>
                                                                         </div>
                                                                         <div class="overlay-shape"
-                                                                            style={{backgroundImage: `url(${shape6})`}}>
+                                                                            style={{ backgroundImage: `url(${shape6})` }}>
                                                                         </div>
                                                                         <h3><a class="ser-title"
                                                                         >Affordable
@@ -171,7 +171,7 @@ const WhySumago = () => {
                                                                         <figure class="image-box"><img width="220" height="220"
                                                                             src={img4}
                                                                             class="attachment-printpark_220x220 size-printpark_220x220 wp-post-image"
-                                                                            alt=""/></figure>
+                                                                            alt="" /></figure>
                                                                         {/* <div class="link-box">
                                                                             <a class="te-btn"
                                                                                 href="./service/calendars/index.php">
@@ -187,31 +187,6 @@ const WhySumago = () => {
                                                     </section>
                                                     {/* categories-section end */}
 
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section
-                                class="elementor-section elementor-inner-section elementor-element elementor-element-5de7557 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                data-id="5de7557" data-element_type="section">
-                                <div class="elementor-container elementor-column-gap-default">
-                                    <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-09446e0"
-                                        data-id="09446e0" data-element_type="column">
-                                        <div class="elementor-widget-wrap elementor-element-populated">
-                                            <div class="elementor-element elementor-element-27d87b4 elementor-widget elementor-widget-printpark_button"
-                                                data-id="27d87b4" data-element_type="widget"
-                                                data-settings="{&quot;btn_margin&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;btn_margin_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;btn_margin_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;btn_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;btn_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;btn_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}"
-                                                data-widget_type="printpark_button.default">
-                                                <div class="elementor-widget-container">
-
-
-                                                    <div class="yt-btn">
-                                                        {/* <a href=""
-                                                            class="theme-btn btn-one printpark-btn">More Categories</a> */}
-                                                    </div>
 
                                                 </div>
                                             </div>

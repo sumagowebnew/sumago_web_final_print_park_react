@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
+import Header from './components/Header'
 import Home from './main components/Home';
 import AboutUs from './main components/AboutUs';
 import Footer from './main components/Footer';
@@ -8,11 +8,11 @@ import Career from './main components/Career';
 import Contact1 from './main components/Contact1';
 import { data } from './main components/obnjectsfie'
 import Oursolutions2 from './main components/Oursolutions2';
+import NewNavbar from './components/NewNavbar';
 function App() {
   return (
     <Router>
-
-
+      <NewNavbar />
       <Header />
       <Routes>
         {data.map((c) => {

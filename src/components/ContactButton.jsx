@@ -21,9 +21,11 @@ const ContactButton = () => {
                                     <Col lg={7} md={12} sm={12}>
                                         <div class="d-grid text-center align-items-center justify-content-center mt-4">
                                             <h3><b><a class="ser-title mt-4" style={{ color: 'black' }}>Leverage our expertise to navigate complex IT<br />landscapes and overcome technical hurdles.</a></b></h3>
-                                            <button style={{ width: '200px', borderRadius: '30px', marginLeft: '60px', marginTop: '10px' }} class="bg-white  p-3 m-4 d-flex justify-content-center align-items-center">
-                                                <a href="tel:+91 8530388815"><h4 class="fw-bold m-0">Contact us</h4></a>
-                                            </button>
+                                            <div className="buttonContainer">
+                                                <button style={{ width: '200px', borderRadius: '30px', marginLeft: '60px', marginTop: '10px' }} class="bg-white  p-3 m-4 d-flex justify-content-center align-items-center">
+                                                    <a href="tel:+91 8530388815"><h4 class="fw-bold m-0">Contact us</h4></a>
+                                                </button>
+                                            </div>
                                         </div>
                                     </Col>
                                     <Col lg={5} md={12} sm={12}>

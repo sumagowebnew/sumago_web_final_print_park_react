@@ -147,9 +147,7 @@ const AboutUs = () => {
 
                 <section className='tabAdjusment'>
                     <div className="container-fluid mobilecorevalue">
-
                         <div className="two-column  d-flex justify-content-center">
-
                             <figure className="image"><img src={value2} alt="Awesome" /></figure>
                         </div>
                     </div>
@@ -1349,17 +1347,15 @@ const AboutUs = () => {
                                                                             <h6 className="te-subtitle">Contributors to our Success !</h6>
                                                                             <h2 className="te-title printpark-size-default">Appreciations </h2>
                                                                         </div>
-
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                     </div>
                                                 </section>
                                                 <section className="news-section blog-grid">
                                                     <div className="row clearfix">
-                                                        <p className="fs-5 p-4">We strongly believe in the recognition and appreciation of the people who put efforts behind the soaring success of Sumago Infotech! Their hard work and dedication deserve to be acknowledged and celebrated. At Sumago Infotech, we value our team members and strive to create a culture of gratitude and recognition.</p>
+                                                        <p className="fs-5">We strongly believe in the recognition and appreciation of the people who put efforts behind the soaring success of Sumago Infotech! Their hard work and dedication deserve to be acknowledged and celebrated. At Sumago Infotech, we value our team members and strive to create a culture of gratitude and recognition.</p>
 
                                                         <div className="col-lg-4 col-md-6 col-sm-12 news-block">
                                                             <div className="news-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">

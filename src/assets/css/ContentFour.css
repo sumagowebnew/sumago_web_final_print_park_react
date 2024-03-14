@@ -27,6 +27,7 @@
 
 .content-four .accordion-button:not(.collapsed) {
     background-color: transparent !important;
+    color: #d73439 !important;
 }
 
 .content-four .accordion-button::after {

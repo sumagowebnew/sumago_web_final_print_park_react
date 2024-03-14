@@ -18,6 +18,7 @@ const WhoWeAre = () => {
             behavior: 'smooth'
         });
     };
+
     return (
         <div className='whoweare-section container-fluid'>
             <section
@@ -31,9 +32,52 @@ const WhoWeAre = () => {
                                 data-id="fdcf695" data-element_type="widget" data-widget_type="printpark_float_image.default">
                                 <div class="elementor-widget-container">
                                     <Row>
-                                        <Col lg={6} md={6} sm={12} className='imageContainer'>
-                                            <img src={img}
-                                                alt="Awesome"/>
+                                        <Col lg={6} md={6} sm={12}>
+                                            <div className='imageContainer'>
+                                                <img src={img}
+                                                    alt="Awesome" />
+                                            </div>
+                                            <div className="tab3Show">
+                                                <div class="elementor-element elementor-element-34370d5 elementor-widget elementor-widget-printpark_icon_box"
+                                                    data-id="34370d5" data-element_type="widget" data-widget_type="printpark_icon_box.default">
+                                                    <div class="elementor-widget-container">
+                                                        <ul class="te-icon-box highlights-list clearfix">
+                                                            <li class="te-icon">
+                                                                <i><img src={icon5} width="25" /></i>
+                                                                <a class="te-title" rel="&quot;nofollow&quot;">
+                                                                    <span class="te-title">SEO Services</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-34370d5 elementor-widget elementor-widget-printpark_icon_box"
+                                                    data-id="34370d5" data-element_type="widget" data-widget_type="printpark_icon_box.default">
+                                                    <div class="elementor-widget-container">
+                                                        <ul class="te-icon-box highlights-list clearfix">
+                                                            <li class="te-icon">
+                                                                <i><img src={icon6} width="25" /></i>
+                                                                <a class="te-title" rel="&quot;nofollow&quot;">
+                                                                    <span class="te-title">Business Automation Tools</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-34370d5 elementor-widget elementor-widget-printpark_icon_box"
+                                                    data-id="34370d5" data-element_type="widget" data-widget_type="printpark_icon_box.default">
+                                                    <div class="elementor-widget-container">
+                                                        <ul class="te-icon-box highlights-list clearfix">
+                                                            <li class="te-icon">
+                                                                <i><img src={icon7} width="20" /></i>
+                                                                <a class="te-title" rel="&quot;nofollow&quot;">
+                                                                    <span class="te-title">AI and Machine Learning</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </Col>
                                         <Col lg={6} md={6} sm={12}>
                                             <div class="elementor-column elementor-top-column elementor-element elementor-element-7f816f0"
@@ -103,7 +147,7 @@ const WhoWeAre = () => {
                                                         <div class="elementor-widget-container">
                                                             <ul class="te-icon-box highlights-list clearfix">
                                                                 <li class="te-icon">
-                                                                    <i><img src={icon3} style={{padding:'15px'}}/></i> <a class="te-title"
+                                                                    <i><img src={icon3} style={{ padding: '15px' }} /></i> <a class="te-title"
                                                                         rel="&quot;nofollow&quot;"><span
                                                                             class="te-title">Website Design and Development</span></a>
                                                                 </li>
@@ -126,46 +170,48 @@ const WhoWeAre = () => {
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                    <div class="elementor-element elementor-element-34370d5 elementor-widget elementor-widget-printpark_icon_box"
-                                                        data-id="34370d5" data-element_type="widget" data-widget_type="printpark_icon_box.default">
-                                                        <div class="elementor-widget-container">
-                                                            <ul class="te-icon-box highlights-list clearfix">
-                                                                <li class="te-icon">
-                                                                    <i><img src={icon5} width="25" /></i>
-                                                                    <a class="te-title" rel="&quot;nofollow&quot;">
-                                                                        <span class="te-title">SEO Services</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
+                                                    <div className="tab3Hide">
+                                                        <div class="elementor-element elementor-element-34370d5 elementor-widget elementor-widget-printpark_icon_box"
+                                                            data-id="34370d5" data-element_type="widget" data-widget_type="printpark_icon_box.default">
+                                                            <div class="elementor-widget-container">
+                                                                <ul class="te-icon-box highlights-list clearfix">
+                                                                    <li class="te-icon">
+                                                                        <i><img src={icon5} width="25" /></i>
+                                                                        <a class="te-title" rel="&quot;nofollow&quot;">
+                                                                            <span class="te-title">SEO Services</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-34370d5 elementor-widget elementor-widget-printpark_icon_box"
-                                                        data-id="34370d5" data-element_type="widget" data-widget_type="printpark_icon_box.default">
-                                                        <div class="elementor-widget-container">
-                                                            <ul class="te-icon-box highlights-list clearfix">
-                                                                <li class="te-icon">
-                                                                    <i><img src={icon6} width="25" /></i>
-                                                                    <a class="te-title" rel="&quot;nofollow&quot;">
-                                                                        <span class="te-title">Business Automation Tools</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
+                                                        <div class="elementor-element elementor-element-34370d5 elementor-widget elementor-widget-printpark_icon_box"
+                                                            data-id="34370d5" data-element_type="widget" data-widget_type="printpark_icon_box.default">
+                                                            <div class="elementor-widget-container">
+                                                                <ul class="te-icon-box highlights-list clearfix">
+                                                                    <li class="te-icon">
+                                                                        <i><img src={icon6} width="25" /></i>
+                                                                        <a class="te-title" rel="&quot;nofollow&quot;">
+                                                                            <span class="te-title">Business Automation Tools</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-34370d5 elementor-widget elementor-widget-printpark_icon_box"
-                                                        data-id="34370d5" data-element_type="widget" data-widget_type="printpark_icon_box.default">
-                                                        <div class="elementor-widget-container">
-                                                            <ul class="te-icon-box highlights-list clearfix">
-                                                                <li class="te-icon">
-                                                                    <i><img src={icon7} width="20" /></i>
-                                                                    <a class="te-title" rel="&quot;nofollow&quot;">
-                                                                        <span class="te-title">AI and Machine Learning</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
+                                                        <div class="elementor-element elementor-element-34370d5 elementor-widget elementor-widget-printpark_icon_box"
+                                                            data-id="34370d5" data-element_type="widget" data-widget_type="printpark_icon_box.default">
+                                                            <div class="elementor-widget-container">
+                                                                <ul class="te-icon-box highlights-list clearfix">
+                                                                    <li class="te-icon">
+                                                                        <i><img src={icon7} width="20" /></i>
+                                                                        <a class="te-title" rel="&quot;nofollow&quot;">
+                                                                            <span class="te-title">AI and Machine Learning</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </div >
+                                                    </div >
+                                                </div>
                                             </div >
                                         </Col>
                                     </Row>

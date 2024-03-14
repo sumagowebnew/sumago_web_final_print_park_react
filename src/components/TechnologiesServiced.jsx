@@ -22,6 +22,8 @@ const TechnologiesServiced = () => {
         speed: 500,
         pauseOnHover: false,
         arrows: false,
+        // nextArrow: <CustomNextArrow />,
+        // prevArrow: <CustomPrevArrow />,
     };
     return (
         <div className='technologies-section'>
@@ -67,5 +69,21 @@ const TechnologiesServiced = () => {
         </div>
     )
 }
+
+// const CustomNextArrow = (props) => {
+//     return (
+//         <div onClick={props.onClick} className='testimonialLeftArrow'>
+//             <i class="bi bi-arrow-right-circle-fill"></i>
+//         </div>
+//     );
+// };
+
+// const CustomPrevArrow = (props) => {
+//     return (
+//         <div onClick={props.onClick} className='testimonialRightArrow'>
+//             <i class="bi bi-arrow-left-circle-fill"></i>
+//         </div>
+//     );
+// };
 
 export default TechnologiesServiced

@@ -188,7 +188,6 @@ const Header = () => {
                                                             data-toggle="dropdown1" className="hvr-underline-from-left1"
                                                             aria-expanded="false" data-scroll
                                                             data-options="easing: easeOutQuart" style={{ textDecoration: 'none' }} onclick={scrollToTop}>Home</Link>
-
                                                     </li>
                                                     <li id="menu-item-54"
                                                         className="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-54">
@@ -196,26 +195,19 @@ const Header = () => {
                                                             data-toggle="dropdown1" className="hvr-underline-from-left1"
                                                             aria-expanded="false" data-scroll
                                                             data-options="easing: easeOutQuart" style={{ textDecoration: 'none' }} onclick={scrollToTop}>Our Solutions</Link>
-
                                                     </li>
-
-
-
                                                     <li id="menu-item-82"
                                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82">
                                                         <Link title="Career" to="/career" data-toggle="dropdown1"
                                                             className="hvr-underline-from-left1" aria-expanded="false" data-scroll
                                                             data-options="easing: easeOutQuart" style={{ textDecoration: 'none' }} onclick={scrollToTop}>Career</Link>
-
                                                     </li>
                                                     <li id="menu-item-81"
                                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-81">
                                                         <Link title="About" to="/about" data-toggle="dropdown1"
                                                             className="hvr-underline-from-left1" aria-expanded="false" data-scroll
                                                             data-options="easing: easeOutQuart" style={{ textDecoration: 'none' }} onclick={scrollToTop}>About us</Link>
-
                                                     </li>
-
                                                     <li id="menu-item-60"
                                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-60">
                                                         <Link title="Contact" to="/contact"
@@ -304,8 +296,8 @@ const Header = () => {
                         <div className="outer-container2">
                             <div className="outer-box outer-box1 d-flex justify-content-evenly ">
 
-                                <Link to="/" title="WordPress Printing">
-                                    <img id="shapeimg" src={sumagologo} alt="" /></Link>
+                                <Link to="/" title="WordPress Printing" className='d-flex align-items-center'>
+                                    <img src={sumagologo} alt="" style={{width:'400px', height: 'auto'}} /></Link>
 
                                 <div className="left-column">
 

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 990px) {
     .main-footer .scroll-top {
         display: none;
     }
@@ -14,5 +14,12 @@
 
     footer .column2 .menu-essentials-menu-container ul{
         margin-right: 110px;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    footer .column2 .menu-essentials-menu-container ul{
+        margin: 0;
+        padding: 0;
     }
 }

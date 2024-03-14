@@ -193,11 +193,11 @@ const Contact1 = () => {
                                                                                 </div>
                                                                                 <div
                                                                                     className="col-lg-12 col-md-12 col-sm-12 form-group message-btn centred">
-                                                                                    <p><button className="theme-btn btn-one"
+                                                                                    <button className="theme-btn btn-one"
                                                                                         type="submit"
                                                                                         name="submit"><span>Send
                                                                                             Your Message</span></button>
-                                                                                    </p>
+                                                                                    
                                                                                 </div>
                                                                             </div>
                                                                             <div className="wpcf7-response-output"
@@ -303,7 +303,7 @@ const Contact1 = () => {
                                                     <section className="info-section centred p-0 m-0">
                                                         <div className="info-column">
                                                             <div className="info-block-one">
-                                                                <div className="inner-box te-icon-box cardHeight">
+                                                                <div className="inner-box te-icon-box cardHeight cardAtCenter">
                                                                     <div className="icon-box te-icon">
                                                                         <i className="flaticon-map"></i>
                                                                     </div>

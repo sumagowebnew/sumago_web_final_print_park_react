@@ -23,6 +23,7 @@ import ContentThree from '../components/ContentThree';
 import Contentfour from '../components/Contentfour';
 import { Link } from 'react-router-dom';
 import ContentFour2 from '../components/ContentFour2';
+import axios from 'axios';
 
 const Oursolutions2 = (props) => {
     const data = [
@@ -44,6 +45,27 @@ const Oursolutions2 = (props) => {
     const handleTabClick = (tab) => {
         setActiveTab(tab);
     };
+
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [phone, setPhone] = useState("")
+    const [service, setService] = useState("")
+    const [other, setOther] = useState("")
+    const [address, setAddress] = useState("")
+    const [comment, setComment] = useState("")
+
+    const SubmitData = (e) => {
+        e.preventDefault();
+        let newData = {
+            name: name, email: email, phone: phone, service: service, other_service: other, address: address, comment: comment
+        }
+        axios.post("/quote/add", newData).then((resp) => {
+            console.log("resp", resp)
+
+        }).catch((err) => {
+            console.log("err", err);
+        })
+    }
     return (
         <div>
             <section class="page-title centred">
@@ -137,22 +159,22 @@ const Oursolutions2 = (props) => {
                                                             <button type="button" className="close" data-bs-dismiss="modal">X</button>
                                                         </div>
                                                         <div className="modal-body">
-                                                            <form method="post" name="myForm">
+                                                            <form method="post" onSubmit={SubmitData} name="myForm">
                                                                 <div style={{ textAlign: "left" }} className="form-group">
                                                                     <label>Name :</label>
-                                                                    <input className="form-control" type="text" name="fname" onInput={(e) => e.target.value = e.target.value.replace(/[^a-zA-Z\s]/g, '').replace(/(\..*)\./g, '$1')} placeholder="Name" required="" />
+                                                                    <input className="form-control" type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" required />
                                                                 </div>
                                                                 <div style={{ textAlign: "left" }} className="form-group">
                                                                     <label>Contact :</label>
-                                                                    <input className="form-control" type="tel" name="contact" onInput={(e) => e.target.value = e.target.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')} maxLength="10" minLength="10" pattern="[7-9]{1}[0-9]{9}" placeholder="Mobile no" required="" />
+                                                                    <input className="form-control" type="tel" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} maxLength="10" minLength="10" pattern="[7-9]{1}[0-9]{9}" placeholder="Phone no" required />
                                                                 </div>
                                                                 <div style={{ textAlign: "left" }} className="form-group">
                                                                     <label>Email :</label>
-                                                                    <input className="form-control" type="email" name="email" pattern="^(([-\w\d]+)(\.[-\w\d]+)@([-\w\d]+)(\.[-\w\d]+)(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" placeholder="Email" required="" />
+                                                                    <input className="form-control" type="email" name="email" placeholder="Email" required value={email} onChange={(e) => setEmail(e.target.value)} />
                                                                 </div>
                                                                 <div style={{ textAlign: "left" }} className="form-group">
                                                                     <label>Type of Services :</label>
-                                                                    <select name="service" className="form-control" required="">
+                                                                    <select name="service" className="form-control" required value={service} onChange={(e) => setService(e.target.value)}>
                                                                         <option value="">Select Service</option>
                                                                         <option value="Website Development">Website Development</option>
                                                                         <option value="App Development">App Development</option>
@@ -167,20 +189,21 @@ const Oursolutions2 = (props) => {
                                                                 </div>
                                                                 <div style={{ textAlign: "left" }} className="form-group">
                                                                     <label>Other :</label>
-                                                                    <input className="form-control" type="text" name="other" onInput={(e) => e.target.value = e.target.value.replace(/[^a-zA-Z\s]/g, '').replace(/(\..*)\./g, '$1')} placeholder="Other Service" />
+                                                                    <input className="form-control" type="text" name="other" value={other} onChange={(e) => setOther(e.target.value)} placeholder="Other Service" />
                                                                 </div>
                                                                 <div style={{ textAlign: "left" }} className="form-group">
                                                                     <label>Address / City :</label>
-                                                                    <textarea className="form-control" rows="4" cols="10" name="address" placeholder="Address / City"></textarea>
+                                                                    <textarea className="form-control" rows="4" cols="10" name="address" value={address} onChange={(e) => setAddress(e.target.value)} placeholder="Address / City"></textarea>
                                                                 </div>
                                                                 <div style={{ textAlign: "left" }} className="form-group">
                                                                     <label>Any Comment :</label>
-                                                                    <textarea className="form-control" rows="4" cols="10" name="comment" placeholder="Comment"></textarea>
+                                                                    <textarea className="form-control" rows="4" cols="10" name="comment" value={comment} onChange={(e) => setComment(e.target.value)} placeholder="Comment"></textarea>
                                                                 </div>
                                                                 <div style={{ textAlign: "left" }} className="form-group mt-4">
                                                                     <center>
-                                                                        <input className="btn btn-success btn-lg" type="submit" id="quoteReq" name="submit" value="Submit" />
-                                                                        <input className="btn btn-danger btn-lg" type="reset" name="btn_reset" value="Clear" />
+                                                                        <button className="btn btn-success btn-lg" data-bs-dismiss="modal" type="submit" >Submit</button>
+                                                                        <button className="btn btn-success btn-lg" type="reset"  >Clear</button>
+
                                                                     </center>
                                                                 </div>
                                                             </form>

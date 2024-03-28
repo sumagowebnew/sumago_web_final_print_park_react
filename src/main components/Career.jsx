@@ -20,10 +20,37 @@ import BEimg2 from '../assets/images/wp-content/uploads/2023/08/ICONS CAREERE PA
 import r1 from '../assets/images/wp-content/uploads/2023/08/ICONS CAREERE PAGE/download R 1.png'
 import BEimg3 from '../assets/images/wp-content/uploads/2023/08/ICONS CAREERE PAGE/3401411-200 r 3.png'
 import '../assets/images/wp-content/themes/printpark/assets/css/style.css'
+import axios from 'axios';
 
 const Career = () => {
   const [activeTab, setActiveTab] = useState('all'); // Initial active tab state
-
+  const [title, setTitle] = useState("")
+  const [name, setName] = useState("")
+  const [phone, setPhone] = useState("")
+  const [address, setAddress] = useState("")
+  const [email, setEmail] = useState("")
+  const [confmEmail, setConfmEmail] = useState("")
+  const [cv, setCV] = useState()
+  const [cover_letter, setCover_letter] = useState()
+  console.log("cv", cv);
+  console.log("cover_letter", cover_letter);
+  const submitData = (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+    formData.append("title", title)
+    formData.append("name", name)
+    formData.append("phone", phone)
+    formData.append("address", address)
+    formData.append("email", email)
+    formData.append("confmEmail", confmEmail)
+    formData.append("cv", cv)
+    formData.append("cover_letter", cover_letter)
+    axios.post("/career/apply", formData, { headers: { "Content-Type": "multipart/form-data" } }).then((resp) => {
+      console.log("resp", resp)
+    }).catch((err) => {
+      console.log("err", err);
+    })
+  }
   const handleTabClick = (category) => {
     setActiveTab(category);
   };
@@ -347,42 +374,42 @@ const Career = () => {
               <button type="button" className="close" data-bs-dismiss="modal">X</button>
             </div>
             <div className="modal-body">
-              <form method="post" name="myForm" enctype="multipart/form-data" onsubmit="return validate();">
+              <form method="post" name="myForm" enctype="multipart/form-data" onSubmit={submitData}>
                 <div className="form-group">
                   <label>Job Title :</label>
-                  <input className="form-control" type="text" name="job_title" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Name" required="" />
+                  <input className="form-control" type="text" name="title" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Name" required />
                 </div>
                 <div className="form-group">
                   <label>Name :</label>
-                  <input className="form-control" type="text" name="fname" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Name" required="" />
+                  <input className="form-control" type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" required />
                 </div>
                 <div className="form-group">
                   <label>Mobile Number :</label>
-                  <input className="form-control" type="tel" name="mobile_no" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" maxlength="10" minlength="10" pattern="[7-9]{1}[0-9]{9}" placeholder="Mobile no." required="" />
+                  <input className="form-control" type="tel" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} maxlength="10" minlength="10" pattern="[7-9]{1}[0-9]{9}" placeholder="Mobile no." required />
                 </div>
                 <div className="form-group">
                   <label>Address :</label>
-                  <textarea type="text" name="address" className="form-control" placeholder="Address" oninput="name required" required=""></textarea>
+                  <textarea type="text" name="address" className="form-control" placeholder="Address" value={address} onChange={(e) => setAddress(e.target.value)} required=""></textarea>
                 </div>
                 <div className="form-group">
                   <label>Email Address :</label>
-                  <input className="form-control" type="email" name="email" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" placeholder="Email" required="" />
+                  <input className="form-control" type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
                 </div>
                 <div className="form-group">
                   <label>Confirm Email Address :</label>
-                  <input className="form-control" type="email" name="comemail" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" placeholder="Email" required="" />
+                  <input className="form-control" type="email" name="confEmail" placeholder="Email" required value={confmEmail} onChange={(e) => setConfmEmail(e.target.value)} />
                 </div>
                 <div className="form-group">
                   <label>Cover Letter :</label>
                   <div>
-                    <input type="file" name="cv" accept=".pdf" id="cv" required="" />
+                    <input type="file" name="cover_letter" accept=".pdf" id="cover_letter" required onChange={(e) => setCover_letter(e.target.files[0])} />
                     <span id="file_error" className="inputError"></span>
                   </div>
                 </div>
                 <div className="form-group">
                   <label>Upload CV :</label>
                   <div>
-                    <input type="file" name="upcv" accept=".pdf" id="cv" required="" />
+                    <input type="file" name="cv" accept=".pdf" id="cv" required onChange={(e) => setCV(e.target.files[0])} />
                     <span id="file_error" className="inputError"></span>
                   </div>
                 </div>
@@ -393,8 +420,8 @@ const Career = () => {
                   </div> */}
 
                 <div className="form-group text-center mt-4">
-                  <input className="btn btn-success btn-lg" type="submit" name="btn_submit" value="Submit" />
 
+                  <button className="btn btn-success btn-lg" type="submit" name="btn_submit">Submit</button>
                   {/* <input className="btn btn-danger btn-lg" type="reset" name="btn_reset" value="Clear"> */}
                 </div>
               </form>

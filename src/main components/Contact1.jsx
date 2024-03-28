@@ -4,8 +4,26 @@ import Frame from '../assets/images/wp-content/themes/printpark/assets/images/sh
 import shape20 from '../assets/images/wp-content/themes/printpark/assets/images/shape/shape-20.png';
 import { Col, Container, Row } from 'react-bootstrap';
 import '../assets/css/Contact1.css'
+import axios from 'axios';
 
 const Contact1 = () => {
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [phone, setPhone] = useState("")
+    const [website, setWebsite] = useState("")
+    const [message, setMessage] = useState("")
+
+    const SubmitData = (e) => {
+        e.preventDefault();
+        let newData = {
+            name, email, phone, website, message
+        }
+        axios.post("contact/add", newData).then((resp) => {
+            console.log("resp", resp)
+        }).catch((err) => {
+            console.log("err", err);
+        })
+    }
     return (
         <>
             <section className="page-title centred">
@@ -87,6 +105,7 @@ const Contact1 = () => {
                                                                         </div>
                                                                         <form
                                                                             action=""
+                                                                            onSubmit={SubmitData}
                                                                             method="post" className="wpcf7-form init"
                                                                             aria-label="Contact form"
                                                                             novalidate="novalidate" data-status="init">
@@ -117,7 +136,9 @@ const Contact1 = () => {
                                                                                             className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                             aria-required="true"
                                                                                             aria-invalid="false"
-                                                                                            placeholder="Name*" value=""
+                                                                                            placeholder="Name*"
+                                                                                            value={name}
+                                                                                            onChange={(e) => setName(e.target.value)}
                                                                                             type="text"
                                                                                             name="name" /></span>
                                                                                     </p>
@@ -136,7 +157,9 @@ const Contact1 = () => {
                                                                                             aria-required="true"
                                                                                             aria-invalid="false"
                                                                                             placeholder="Email*"
-                                                                                            value="" type="email"
+                                                                                            value={email}
+                                                                                            onChange={(e) => setEmail(e.target.value)}
+                                                                                            type="email"
                                                                                             name="email" /></span>
                                                                                     </p>
                                                                                 </div>
@@ -153,7 +176,9 @@ const Contact1 = () => {
                                                                                             aria-required="true"
                                                                                             aria-invalid="false"
                                                                                             placeholder="Phone*"
-                                                                                            value="" type="text"
+                                                                                            value={phone}
+                                                                                            onChange={(e) => setPhone(e.target.value)}
+                                                                                            type="text"
                                                                                             name="phone" required /></span>
                                                                                     </p>
                                                                                 </div>
@@ -170,7 +195,9 @@ const Contact1 = () => {
                                                                                             aria-required="true"
                                                                                             aria-invalid="false"
                                                                                             placeholder="Website"
-                                                                                            value="" type="text"
+                                                                                            value={website}
+                                                                                            onChange={(e) => setWebsite(e.target.value)}
+                                                                                            type="text"
                                                                                             name="website" /></span>
                                                                                     </p>
                                                                                 </div>
@@ -187,6 +214,8 @@ const Contact1 = () => {
                                                                                             className="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
                                                                                             aria-required="true"
                                                                                             aria-invalid="false"
+                                                                                            value={message}
+                                                                                            onChange={(e) => setMessage(e.target.value)}
                                                                                             placeholder="Your Message..."
                                                                                             name="message"></textarea></span>
                                                                                     </p>
@@ -197,7 +226,7 @@ const Contact1 = () => {
                                                                                         type="submit"
                                                                                         name="submit"><span>Send
                                                                                             Your Message</span></button>
-                                                                                    
+
                                                                                 </div>
                                                                             </div>
                                                                             <div className="wpcf7-response-output"

@@ -9,7 +9,9 @@ import Contact1 from './main components/Contact1';
 import { data } from './main components/obnjectsfie'
 import Oursolutions2 from './main components/Oursolutions2';
 import NewNavbar from './components/NewNavbar';
+import axios from 'axios';
 function App() {
+  axios.defaults.baseURL = axios.defaults.baseURL = "http://127.0.0.1:5000"
   return (
     <Router>
       <NewNavbar />
